@@ -1,0 +1,9 @@
+{
+    "name": "DevkitPPC",
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": "."
+    },
+    "overrideCommand": false,
+    "remoteUser": "dev"
+}
