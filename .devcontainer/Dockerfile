@@ -7,6 +7,4 @@ RUN useradd -ms /bin/bash dev \
 
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
-
-
 CMD ["sleep", "infinity"]
