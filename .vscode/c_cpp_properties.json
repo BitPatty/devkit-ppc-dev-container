@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "forcedInclude": ["${workspaceFolder}/.vscode/vscode.h"],
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/include/**",
+                "/opt/devkitpro/devkitPPC/include/**",
+                "/opt/devkitpro/devkitPPC/powerpc-eabi/include/**",
+                "/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/11.1.0/include/**",
+                "/opt/devkitpro/libogc/include/**",
+                "/usr/include/**"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/include/**",
+                    "/opt/devkitpro/devkitPPC/include/**",
+                    "/opt/devkitpro/devkitPPC/powerpc-eabi/include/**",
+                    "/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/11.1.0/include/**",
+                    "/opt/devkitpro/libogc/include/**",
+                    "/usr/include/bluetooth/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": ""
+        }
+    ],
+    "version": 4
+}

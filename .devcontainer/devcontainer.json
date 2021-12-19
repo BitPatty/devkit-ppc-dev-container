@@ -5,5 +5,10 @@
         "context": "."
     },
     "overrideCommand": false,
-    "remoteUser": "dev"
+    "remoteUser": "dev",
+    "extensions": [
+        "OGoodness.powerpc-syntax",
+        "ms-vscode.makefile-tools",
+        "ms-vscode.cpptools"
+    ]
 }
