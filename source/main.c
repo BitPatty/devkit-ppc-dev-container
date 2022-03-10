@@ -20,6 +20,7 @@ int main(int argc, char **argv) {
 	// This will correspond to the settings in the Wii menu
 	rmode = VIDEO_GetPreferredMode(NULL);
 
+
 	// Allocate memory for the display in the uncached region
 	xfb = MEM_K0_TO_K1(SYS_AllocateFramebuffer(rmode));
 

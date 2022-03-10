@@ -2,31 +2,23 @@
     "configurations": [
         {
             "name": "Linux",
-            "forcedInclude": ["${workspaceFolder}/.vscode/vscode.h"],
+            "compilerPath": "${DEVKITPPC}/bin/powerpc-eabi-cpp",
+            "cppStandard": "c++11",
             "includePath": [
-                "${workspaceFolder}",
                 "${workspaceFolder}/include/**",
-                "/opt/devkitpro/devkitPPC/include/**",
-                "/opt/devkitpro/devkitPPC/powerpc-eabi/include/**",
-                "/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/11.1.0/include/**",
-                "/opt/devkitpro/libogc/include/**",
-                "/usr/include/**"
+                "${DEVKITPPC}/include/**",
+                "${DEVKITPRO}/portlibs/wii/include/**",
+                "${DEVKITPRO}/portlibs/ppc/include/**",
+                "${DEVKITPRO}/libogc/include/**",
+                "${DEVKITPPC}/lib/gcc/powerpc-eabi/11.1.0/include/**"
+            ],
+            "defines": [
+                "GEKKO"
             ],
             "browse": {
-                "path": [
-                    "${workspaceFolder}",
-                    "${workspaceFolder}/include/**",
-                    "/opt/devkitpro/devkitPPC/include/**",
-                    "/opt/devkitpro/devkitPPC/powerpc-eabi/include/**",
-                    "/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/11.1.0/include/**",
-                    "/opt/devkitpro/libogc/include/**",
-                    "/usr/include/bluetooth/**"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            },
-            "cStandard": "c11",
-            "cppStandard": "c++11",
-            "compilerPath": ""
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
         }
     ],
     "version": 4
